@@ -5,6 +5,12 @@ This project is my first attempt at setting up a **simulated corporate environme
 
 ---
 
+### Diagram  
+![Diagram](screenshots/0-VirtualBox-Diagram.png)  
+*This is the diagram I followed for the project. Big thanks to Josh Madakor for the inspiration!*  
+
+---
+
 ### What I Learned  
 - **Active Directory Basics**: Setting up a domain controller, creating users, and organizing them into groups.  
 - **DHCP and DNS**: How to automatically assign IP addresses and make sure devices can find each other on the network.  
@@ -25,50 +31,74 @@ This project is my first attempt at setting up a **simulated corporate environme
 
 ## How I Did It  
 
-### 0. Diagram
-![Diagram](screenshots/0-VirtualBox-Diagram.png)  
-*This is the diagram I followed for the project. Big thanks to [@joshmadakor](https://github.com/joshmadakor) for the inspiration!*  
-
----
-
-### 1. Setting Up the Domain Controller  
-![Domain Controller Setup](screenshots/1-VirtualBox-server-creation-step-1.png)  
+### 1. Creating the Domain Controller VM  
+![Server Creation](screenshots/1-VirtualBox-server-creation-step-1.png)  
 *I created a virtual machine for the domain controller using Windows Server 2019. I gave it 2GB of RAM, 3 CPUs, and 20GB of storage to make sure it runs smoothly.*  
 
 ---
 
-### 2. Configuring Active Directory  
-![Active Directory Setup](screenshots/VirtualBox-Domain-AD-DS-step-6.png)  
+### 2. Setting Up the Second Network Adapter  
+![Second Network Adapter](screenshots/2-VirtualBox-second-network-step-2.png)  
+*I added a second network adapter to the VM and set it to **Internal Network** so the domain controller and clients can communicate.*  
+
+---
+
+### 3. Installing Windows Server 2019  
+![Installing Windows](screenshots/3-VirtualBox-installing-windows-step-3.png)  
+*I installed Windows Server 2019 on the VM. The setup process included copying files, installing features, and applying updates.*  
+
+---
+
+### 4. Windows Server Ready  
+![Windows Ready](screenshots/4-VirtualBox-windows-ready-step-4.png)  
+*Windows Server 2019 was successfully installed and ready for configuration.*  
+
+---
+
+### 5. Configuring the NIC and IP Address  
+![NIC and IP Configuration](screenshots/5-VirtualBox-NIC-and-IP-adress-step-5.png)  
+*I set a static IP address (`172.16.0.1`) for the domain controller. This ensures the server always has the same IP, which is important for DNS and Active Directory.*  
+
+---
+
+### 6. Setting Up Active Directory  
+![Active Directory Setup](screenshots/6-VirtualBox-Domain-AD-DS-step-6.png)  
 *I installed Active Directory and set up the domain `mydomain.com`. Then, I created some organizational units (OUs) to organize users and computers.*  
 
 ---
 
-### 3. Setting Up DHCP  
-![DHCP Configuration](screenshots/VirtualBox-DHCP-set-up-step-9.png)  
+### 7. Configuring Routing and Remote Access  
+![Routing and Remote Access](screenshots/7-VirtualBox-Ras-Nat-step-7.png)  
+*I set up Routing and Remote Access (RRAS) to allow secure remote connections, like VPNs, to the network.*  
+
+---
+
+### 8. Setting Up DHCP  
+![DHCP Configuration](screenshots/8-VirtualBox-DHCP-set-up-and-lease-duration-step-8.png)  
 *I configured the DHCP server to automatically assign IP addresses in the range `172.16.0.100–172.16.0.200`. I left the lower IPs (like `172.16.0.1`) for the domain controller and other important devices.*  
 
 ---
 
-### 4. Automating User Creation with PowerShell  
-![PowerShell Automation](screenshots/VirtualBox-automated-creation-of-users-with-just-their-names-step-10.png)  
+### 9. Automating User Creation with PowerShell  
+![PowerShell Automation](screenshots/9-VirtualBox-DHCP-set-up-step-9.png)  
 *I wrote a PowerShell script to create users automatically. It reads names from a file (`Names.txt`), generates usernames (like first initial + last name), and sets up accounts with secure passwords.*  
 
 ---
 
-### 5. Joining Clients to the Domain  
-![Client Domain Join](screenshots/VirtualBox-setting-up-client-step-12.png)  
+### 10. Joining Clients to the Domain  
+![Client Domain Join](screenshots/10-VirtualBox-automated-creation-of-users-with-just-their-names-step-10.png)  
 *I joined a Windows 10 client (`CLIENT2`) to the domain `mydomain.com`. I set the interface to Russian to make it feel more realistic and show off my language skills!*  
 
 ---
 
-### 6. Verifying DHCP Functionality  
-![DHCP Leases](screenshots/VirtualBox-client-adress-proof-step-13.png)  
+### 11. Verifying DHCP Functionality  
+![DHCP Leases](screenshots/11-VirtualBox-users-created-step-11.png)  
 *I checked the DHCP server to make sure it was working. The client (`CLIENT2`) got an IP address (`172.16.0.101`), and I saw a temporary name (`minint-vuj5bw`) that Windows uses during setup.*  
 
 ---
 
-### 7. Testing User Login  
-![User Login](screenshots/last-screenshottttt.png)  
+### 12. Testing User Login  
+![User Login](screenshots/12-VirtualBox-setting-up-client-step-12.png)  
 *I logged in as `pmesceriakov` on a domain-joined client to make sure everything worked. It felt like a real corporate environment!*  
 
 ---
