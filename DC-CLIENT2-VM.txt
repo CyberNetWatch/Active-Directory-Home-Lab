@@ -1,0 +1,236 @@
+C:\Users\pmesc>VBoxManage list vms
+"DC" {ad77af45-ddff-4da6-a84f-29f3155cdf09}
+"CLIENT2" {c08c6f06-883f-4f78-85ec-daa0bcf14cee}
+
+C:\Users\pmesc>VBoxManage showvminfo DC
+Name:                        DC
+Encryption:                  disabled
+Groups:                      /
+Platform Architecture:       x86
+Guest OS:                    Other Windows (64-bit)
+UUID:                        ad77af45-ddff-4da6-a84f-29f3155cdf09
+Config file:                 X:\cyber sec stuff\new machine\DC\DC.vbox
+Snapshot folder:             X:\cyber sec stuff\new machine\DC\Snapshots
+Log folder:                  X:\cyber sec stuff\new machine\DC\Logs
+Hardware UUID:               ad77af45-ddff-4da6-a84f-29f3155cdf09
+Memory size:                 2048MB
+Page Fusion:                 disabled
+VRAM size:                   32MB
+CPU exec cap:                100%
+CPUProfile:                  host
+Chipset:                     piix3
+Firmware:                    BIOS
+Number of CPUs:              3
+HPET:                        disabled
+PAE:                         enabled
+Long Mode:                   enabled
+Triple Fault Reset:          disabled
+APIC:                        enabled
+X2APIC:                      disabled
+Nested VT-x/AMD-V:           disabled
+CPUID overrides:             None
+Hardware Virtualization:     enabled
+Nested Paging:               enabled
+Large Pages:                 enabled
+VT-x VPID:                   enabled
+VT-x Unrestricted Exec.:     enabled
+AMD-V Virt. Vmsave/Vmload:   enabled
+CPUID Portability Level:     0
+Boot menu mode:              message and menu
+Boot Device 1:               Floppy
+Boot Device 2:               DVD
+Boot Device 3:               HardDisk
+Boot Device 4:               Not Assigned
+ACPI:                        enabled
+IOAPIC:                      enabled
+BIOS APIC mode:              APIC
+Time offset:                 0ms
+BIOS NVRAM File:             X:\cyber sec stuff\new machine\DC\DC.nvram
+RTC:                         local time
+IOMMU:                       None
+Paravirt. Provider:          Default
+Effective Paravirt. Prov.:   None
+State:                       powered off (since 2025-03-15T17:50:46.000000000)
+Graphics Controller:         VBoxVGA
+Monitor count:               1
+3D Acceleration:             disabled
+Teleporter Enabled:          disabled
+Teleporter Port:             0
+Teleporter Address:
+Teleporter Password:
+Tracing Enabled:             disabled
+Allow Tracing to Access VM:  disabled
+Tracing Configuration:
+Autostart Enabled:           disabled
+Autostart Delay:             0
+Default Frontend:
+VM process priority:         default
+Storage Controllers:
+#0: 'IDE', Type: PIIX4, Instance: 0, Ports: 2 (max 2), Bootable
+  Port 0, Unit 0: UUID: a0f579cf-37f6-4f8f-a4c1-1096d53fc0e4
+    Location: "X:\cyber sec stuff\new machine\DC\DC.vdi"
+  Port 1, Unit 0: UUID: aa418d24-d23a-4b89-b4e7-612141900641
+    Location: "E:\New Folder\VBoxGuestAdditions.iso"
+NIC 1:                       MAC: 0800272CB673, Attachment: NAT, Cable connected: on, Trace: off (file: none), Type: 82540EM, Reported speed: 0 Mbps, Boot priority: 0, Promisc Policy: deny, Bandwidth group: none
+NIC 1 Settings:  MTU: 0, Socket (send: 64, receive: 64), TCP Window (send:64, receive: 64)
+NIC 2:                       MAC: 080027DAF400, Attachment: Internal Network 'intnet', Cable connected: on, Trace: off (file: none), Type: 82540EM, Reported speed: 0 Mbps, Boot priority: 0, Promisc Policy: deny, Bandwidth group: none
+NIC 3:                       disabled
+NIC 4:                       disabled
+NIC 5:                       disabled
+NIC 6:                       disabled
+NIC 7:                       disabled
+NIC 8:                       disabled
+Pointing Device:             USB Tablet
+Keyboard Device:             PS/2 Keyboard
+UART 1:                      disabled
+UART 2:                      disabled
+UART 3:                      disabled
+UART 4:                      disabled
+LPT 1:                       disabled
+LPT 2:                       disabled
+Audio:                       enabled (Driver: Default, Controller: AC97, Codec: STAC9700)
+Audio playback:              enabled
+Audio capture:               disabled
+Clipboard Mode:              Bidirectional
+Clipboard file transfers:    disabled
+Drag and drop Mode:          Bidirectional
+VRDE:                        disabled
+OHCI USB:                    enabled
+EHCI USB:                    enabled
+xHCI USB:                    disabled
+USB Device Filters:          <none>
+Bandwidth groups:            <none>
+Shared folders:              <none>
+Recording status:            stopped
+Recording enabled:           no
+Recording screens:           1
+ Screen 0:
+    Enabled:                 yes
+    ID:                      0
+    Record video:            yes
+    Record audio:            no
+    Destination:             File
+    File:                    X:\cyber sec stuff\new machine\DC\DC-screen0.webm
+    Options:                 vc_enabled=true,ac_enabled=false,ac_profile=med
+    Video dimensions:        1024x768
+    Video rate:              512kbps
+    Video FPS:               25fps
+* Guest:
+Configured memory balloon:   0MB
+
+
+C:\Users\pmesc>VBoxManage showvminfo CLIENT2
+Name:                        CLIENT2
+Encryption:                  disabled
+Groups:                      /
+Platform Architecture:       x86
+Guest OS:                    Windows 10 (64-bit)
+UUID:                        c08c6f06-883f-4f78-85ec-daa0bcf14cee
+Config file:                 C:\Users\pmesc\VirtualBox VMs\CLIENT2\CLIENT2.vbox
+Snapshot folder:             C:\Users\pmesc\VirtualBox VMs\CLIENT2\Snapshots
+Log folder:                  C:\Users\pmesc\VirtualBox VMs\CLIENT2\Logs
+Hardware UUID:               c08c6f06-883f-4f78-85ec-daa0bcf14cee
+Memory size:                 2048MB
+Page Fusion:                 disabled
+VRAM size:                   128MB
+CPU exec cap:                100%
+CPUProfile:                  host
+Chipset:                     piix3
+Firmware:                    BIOS
+Number of CPUs:              3
+HPET:                        disabled
+PAE:                         disabled
+Long Mode:                   enabled
+Triple Fault Reset:          disabled
+APIC:                        enabled
+X2APIC:                      disabled
+Nested VT-x/AMD-V:           disabled
+CPUID overrides:             None
+Hardware Virtualization:     enabled
+Nested Paging:               enabled
+Large Pages:                 enabled
+VT-x VPID:                   enabled
+VT-x Unrestricted Exec.:     enabled
+AMD-V Virt. Vmsave/Vmload:   enabled
+CPUID Portability Level:     0
+Boot menu mode:              message and menu
+Boot Device 1:               Floppy
+Boot Device 2:               DVD
+Boot Device 3:               HardDisk
+Boot Device 4:               Not Assigned
+ACPI:                        enabled
+IOAPIC:                      enabled
+BIOS APIC mode:              APIC
+Time offset:                 0ms
+BIOS NVRAM File:             C:\Users\pmesc\VirtualBox VMs\CLIENT2\CLIENT2.nvram
+RTC:                         local time
+IOMMU:                       None
+Paravirt. Provider:          Default
+Effective Paravirt. Prov.:   HyperV
+State:                       powered off (since 2025-03-15T17:07:08.000000000)
+Graphics Controller:         VBoxSVGA
+Monitor count:               1
+3D Acceleration:             disabled
+Teleporter Enabled:          disabled
+Teleporter Port:             0
+Teleporter Address:
+Teleporter Password:
+Tracing Enabled:             disabled
+Allow Tracing to Access VM:  disabled
+Tracing Configuration:
+Autostart Enabled:           disabled
+Autostart Delay:             0
+Default Frontend:
+VM process priority:         default
+Storage Controllers:
+#0: 'SATA', Type: IntelAhci, Instance: 0, Ports: 2 (max 30), Bootable
+  Port 0, Unit 0: UUID: d8c8b101-7190-4cc2-83ca-396fd4388b9a
+    Location: "C:\Users\pmesc\VirtualBox VMs\CLIENT2\CLIENT2.vdi"
+  Port 1, Unit 0: UUID: 854536a7-6bde-4373-a59b-a70914e182ef
+    Location: "X:\cyber sec stuff\win 11\Microsoft Windows 10.0.19045.2486, Version 22H2 (Updated January 2023) - Оригинальные образы от Microsoft MSDN [Ru]\ru-ru_windows_10_consumer_editions_version_22h2_updated_jan_2023_x64_dvd_a3822d65.iso"
+NIC 1:                       MAC: 0800271D4E34, Attachment: NAT, Cable connected: on, Trace: off (file: none), Type: 82540EM, Reported speed: 0 Mbps, Boot priority: 0, Promisc Policy: deny, Bandwidth group: none
+NIC 1 Settings:  MTU: 0, Socket (send: 64, receive: 64), TCP Window (send:64, receive: 64)
+NIC 2:                       disabled
+NIC 3:                       disabled
+NIC 4:                       disabled
+NIC 5:                       disabled
+NIC 6:                       disabled
+NIC 7:                       disabled
+NIC 8:                       disabled
+Pointing Device:             USB Tablet
+Keyboard Device:             PS/2 Keyboard
+UART 1:                      disabled
+UART 2:                      disabled
+UART 3:                      disabled
+UART 4:                      disabled
+LPT 1:                       disabled
+LPT 2:                       disabled
+Audio:                       enabled (Driver: Default, Controller: HDA, Codec: STAC9221)
+Audio playback:              enabled
+Audio capture:               disabled
+Clipboard Mode:              Bidirectional
+Clipboard file transfers:    disabled
+Drag and drop Mode:          Bidirectional
+VRDE:                        disabled
+OHCI USB:                    disabled
+EHCI USB:                    disabled
+xHCI USB:                    enabled
+USB Device Filters:          <none>
+Bandwidth groups:            <none>
+Shared folders:              <none>
+Recording status:            stopped
+Recording enabled:           no
+Recording screens:           1
+ Screen 0:
+    Enabled:                 yes
+    ID:                      0
+    Record video:            yes
+    Record audio:            no
+    Destination:             File
+    File:                    C:\Users\pmesc\VirtualBox VMs\CLIENT2\CLIENT2-screen0.webm
+    Options:                 vc_enabled=true,ac_enabled=false,ac_profile=med
+    Video dimensions:        1024x768
+    Video rate:              512kbps
+    Video FPS:               25fps
+* Guest:
+Configured memory balloon:   0MB
