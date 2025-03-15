@@ -115,6 +115,14 @@ This project is my first attempt at setting up a **simulated corporate environme
 
 ---
 
+### DC-CLIENT2-VM.txt
+## Purpose:
+This VM is set up as a client machine in the Active Directory setup. It's connected to the internal network (intnet), allowing it to interact with the Domain Controller (DC). This setup helps me test things like Group Policies, Active Directory functions, and domain-related tasks.
+
+The VM runs a basic Windows 10 environment, which is lightweight but still lets me perform essential tasks like joining the domain, managing users and groups, and applying Group Policy Objects (GPOs). It’s all about simulating real-world client operations and getting hands-on experience with AD management.
+
+---
+
 ## What I Got Out of This  
 This project was a great way to learn the basics of Active Directory, DHCP, and PowerShell. I made mistakes along the way (like forgetting to enable the right network adapter), but I figured them out and learned a lot. It’s cool to see how all these pieces fit together in a real-world IT setup.  
 
