@@ -87,7 +87,7 @@ This project is my first attempt at setting up a **simulated corporate environme
 
 ### 10. Automating User Creation with PowerShell  
 ![PowerShell Automation](screenshots/10-VirtualBox-automated-creation-of-users-with-just-their-names-step-10.png)  
-*I wrote a PowerShell script to create users automatically. It reads names from a file (`Names.txt`), generates usernames (like first initial + last name), and sets up accounts with secure passwords.*  
+*A PowerShell script to create users automatically. It reads names from a file (`Names.txt`), generates usernames (like first initial + last name), and sets up accounts with passwords. In a real-world scenario, the script would also enforce a password change on first log in for added security. This saves time compared to adding users manually, one by one. please check the AD_PS-master folder for the script and name files.*  
 
 ---
 
