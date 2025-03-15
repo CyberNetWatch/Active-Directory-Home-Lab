@@ -5,9 +5,9 @@ This project is my first attempt at setting up a **simulated corporate environme
 
 ---
 
-### Diagram  
+### 0. Diagram  
 ![Diagram](screenshots/0-VirtualBox-Diagram.png)  
-*This is the diagram I followed for the project. Big thanks to Josh Madakor for the inspiration!*  
+*This is the diagram I followed for the project. Big thanks to [@joshmadakor](https://github.com/joshmadakor) for the inspiration!*  
 
 ---
 
@@ -73,32 +73,44 @@ This project is my first attempt at setting up a **simulated corporate environme
 
 ---
 
-### 8. Setting Up DHCP  
-![DHCP Configuration](screenshots/8-VirtualBox-DHCP-set-up-and-lease-duration-step-8.png)  
+### 8. Setting Up DHCP Lease Duration  
+![DHCP Lease Duration](screenshots/8-VirtualBox-DHCP-set-up-and-lease-duration-step-8.png)  
+*I configured the DHCP lease duration based on the organization’s needs. For example, a café might use a short lease (e.g., 2 hours), while an office might use a longer lease (e.g., 24 hours).*  
+
+---
+
+### 9. Setting Up DHCP  
+![DHCP Configuration](screenshots/9-VirtualBox-DHCP-set-up-step-9.png)  
 *I configured the DHCP server to automatically assign IP addresses in the range `172.16.0.100–172.16.0.200`. I left the lower IPs (like `172.16.0.1`) for the domain controller and other important devices.*  
 
 ---
 
-### 9. Automating User Creation with PowerShell  
-![PowerShell Automation](screenshots/9-VirtualBox-DHCP-set-up-step-9.png)  
+### 10. Automating User Creation with PowerShell  
+![PowerShell Automation](screenshots/10-VirtualBox-automated-creation-of-users-with-just-their-names-step-10.png)  
 *I wrote a PowerShell script to create users automatically. It reads names from a file (`Names.txt`), generates usernames (like first initial + last name), and sets up accounts with secure passwords.*  
 
 ---
 
-### 10. Joining Clients to the Domain  
-![Client Domain Join](screenshots/10-VirtualBox-automated-creation-of-users-with-just-their-names-step-10.png)  
+### 11. Users Created Successfully  
+![Users Created](screenshots/11-VirtualBox-users-created-step-11.png)  
+*The PowerShell script successfully created user accounts in Active Directory. This saved me a lot of time compared to adding users manually!*  
+
+---
+
+### 12. Joining Clients to the Domain  
+![Client Domain Join](screenshots/12-VirtualBox-setting-up-client-step-12.png)  
 *I joined a Windows 10 client (`CLIENT2`) to the domain `mydomain.com`. I set the interface to Russian to make it feel more realistic and show off my language skills!*  
 
 ---
 
-### 11. Verifying DHCP Functionality  
-![DHCP Leases](screenshots/11-VirtualBox-users-created-step-11.png)  
+### 13. Verifying DHCP Functionality  
+![DHCP Leases](screenshots/13-VirtualBox-client-adress-proof-step-13.png)  
 *I checked the DHCP server to make sure it was working. The client (`CLIENT2`) got an IP address (`172.16.0.101`), and I saw a temporary name (`minint-vuj5bw`) that Windows uses during setup.*  
 
 ---
 
-### 12. Testing User Login  
-![User Login](screenshots/12-VirtualBox-setting-up-client-step-12.png)  
+### 14. Testing User Login  
+![User Login](screenshots/14-VirtualBox-user-login-step-14.png)  
 *I logged in as `pmesceriakov` on a domain-joined client to make sure everything worked. It felt like a real corporate environment!*  
 
 ---
