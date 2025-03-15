@@ -7,7 +7,7 @@ This project is my first attempt at setting up a **simulated corporate environme
 
 ### 0. Diagram  
 ![Diagram](screenshots/0-VirtualBox-Diagram.png)  
-*This is the diagram I followed for the project. Big thanks to [@joshmadakor](https://github.com/joshmadakor) for the inspiration!*  
+*This is the diagram I followed for the project. Big thanks to [@joshmadakor](https://github.com/joshmadakor1) for the inspiration!*  
 
 ---
 
