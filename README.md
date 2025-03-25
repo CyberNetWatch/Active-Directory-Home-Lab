@@ -128,5 +128,4 @@ This project was a great way to learn the basics of Active Directory, DHCP, and 
 
 ---
 
-## License  
-This project is licensed under the [MIT License](LICENSE).  
+
